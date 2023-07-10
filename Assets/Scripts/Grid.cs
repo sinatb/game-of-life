@@ -75,4 +75,15 @@ public class Grid : MonoBehaviour
             }
         }
     }
+
+    public void ResetGrid()
+    {
+        for (int i = 0; i < SizeY; i++)
+        {
+            for (int j = 0; j < SizeX; j++)
+            {
+                grid[i,j].ResetIsAlive();
+            }
+        }
+    }
 }
